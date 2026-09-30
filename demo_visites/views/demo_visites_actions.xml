@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Action client : lance la démo dont la clé est passée dans params -->
+    <record id="action_demo_devis" model="ir.actions.client">
+        <field name="name">Démo : créer un devis</field>
+        <field name="tag">demo_visites.play</field>
+        <field name="params" eval="{'demo': 'devis'}"/>
+    </record>
+
+    <!-- Entrée de menu (facultative : l'icône de la barre du haut suffit) -->
+    <menuitem id="menu_demo_devis"
+              name="Démo : créer un devis"
+              parent="sale.sale_menu_root"
+              action="action_demo_devis"
+              groups="demo_visites.group_demo_visites"
+              sequence="99"/>
+</odoo>

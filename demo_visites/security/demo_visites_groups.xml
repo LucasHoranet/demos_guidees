@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Seuls les membres de ce groupe voient l'icône et le menu des démos -->
+    <record id="group_demo_visites" model="res.groups">
+        <field name="name">Démos guidées</field>
+        <field name="users" eval="[(4, ref('base.user_admin'))]"/>
+    </record>
+</odoo>

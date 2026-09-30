@@ -1,0 +1,41 @@
+// Couleur des bulles et de la surbrillance
+$o-demo-color: #875A7B;
+
+.o_demo_cursor {
+    position: fixed;
+    z-index: 100000;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(255, 90, 90, 0.55);
+    border: 2px solid #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.45);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: left 700ms ease, top 700ms ease, transform 0.15s;
+
+    &.o_demo_clic {
+        transform: translate(-50%, -50%) scale(0.55);
+    }
+}
+
+.o_demo_bubble {
+    position: fixed;
+    z-index: 100001;
+    max-width: 300px;
+    padding: 10px 14px;
+    background: $o-demo-color;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 15px;
+    line-height: 1.35;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.o_demo_highlight {
+    outline: 3px solid $o-demo-color !important;
+    outline-offset: 2px;
+}

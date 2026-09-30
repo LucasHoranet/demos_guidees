@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_backend" name="Démos guidées" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/scss" href="/demo_visites/static/src/scss/demo_visites.scss"/>
+            <!-- Moteur -->
+            <script type="text/javascript" src="/demo_visites/static/src/js/demos.js"/>
+            <script type="text/javascript" src="/demo_visites/static/src/js/player.js"/>
+            <script type="text/javascript" src="/demo_visites/static/src/js/action.js"/>
+            <script type="text/javascript" src="/demo_visites/static/src/js/systray.js"/>
+            <!-- Démos (une par fichier) -->
+            <script type="text/javascript" src="/demo_visites/static/src/js/demo_devis.js"/>
+        </xpath>
+    </template>
+</odoo>
