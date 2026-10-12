@@ -4,9 +4,13 @@ odoo.define('demo_visites.demo_devis', function (require) {
 var demos = require('demo_visites.demos');
 
 // ---- À adapter à votre base ----------------------------------------------
-var CLIENT   = "Tristan BLAINEAU"; // nom du client tel qu'il apparaît dans la liste déroulante
-var ARTICLE  = "ART TVA 20%";      // nom exact d'un article existant
-var QUANTITE = "3";
+var CLIENT     = "Lucas HORANET"; // nom du client tel qu'il apparaît dans la liste déroulante
+var PRODUIT    = "ART TVA 20%";      // nom EXACT d'un article existant
+var QUANTITE   = "3";
+var DELAI_MS   = 2000;   // temps de lecture de chaque bulle
+var ANIM_MS    = 700;    // durée du déplacement du curseur
+var TIMEOUT_MS = 15000;  // attente max d'un élément avant d'abandonner
+var FRAPPE_MS  = 70;     // vitesse de frappe (ms par caractère)
 // ---------------------------------------------------------------------------
 
 var LIGNE = 'div[name="order_line"] .o_data_row ';
